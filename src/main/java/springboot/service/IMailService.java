@@ -1,7 +1,9 @@
 package springboot.service;
 
+import java.util.List;
+
 /**
- * @author tangj
+ * @author june
  * @date 2018/5/3 22:06
  */
 public interface IMailService {
@@ -12,7 +14,7 @@ public interface IMailService {
      * @param subject
      * @param content
      */
-    void sendSimpleEmail(String to, String subject, String content);
+    void sendSimpleEmail(List<String> to, String subject, String content);
 
     /**
      * 发送html邮件

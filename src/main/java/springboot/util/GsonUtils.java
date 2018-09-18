@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * Gson转换工具
  *
- * @author tangj
+ * @author june
  * @date 2018/1/23 22:48
  */
 public class GsonUtils {

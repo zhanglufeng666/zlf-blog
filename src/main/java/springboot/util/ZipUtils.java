@@ -7,7 +7,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/23 14:03
  */
 public class ZipUtils {

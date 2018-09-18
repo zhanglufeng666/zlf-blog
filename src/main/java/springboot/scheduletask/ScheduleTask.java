@@ -2,6 +2,7 @@ package springboot.scheduletask;
 
 import com.sun.management.OperatingSystemMXBean;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import springboot.modal.vo.LogVo;
@@ -12,11 +13,12 @@ import springboot.util.DateKit;
 
 import javax.annotation.Resource;
 import java.lang.management.ManagementFactory;
+import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/5/2 22:59
  */
 @Component
@@ -28,8 +30,8 @@ public class ScheduleTask {
     @Resource
     IMailService mailService;
 
-    @Value("${spring.mail.username}")
-    private String mailTo;
+//    @Value("${spring.mail.username}")
+//    private String mailTo;
 
     @Scheduled(fixedRate = 86400000)
     public void process(){
@@ -43,7 +45,14 @@ public class ScheduleTask {
             result.append(" 操作: ").append(logVo.getAction());
             result.append(" IP： ").append(logVo.getIp()).append("\n");
         }
-        mailService.sendSimpleEmail(mailTo,"博客系统运行情况",result.toString());
+        //邮件接收者的邮箱地址
+        List<String> mass = new ArrayList<>();
+        mass.add("444644582@qq.com".trim());
+        mass.add("582826328@qq.com".trim());
+//        mass.add("469022870@qq.com".trim());
+//        SimpleMailMessage message = new SimpleMailMessage();
+//        message.setTo(mass.toArray(new String[mass.size()]));
+        mailService.sendSimpleEmail(mass,"博客系统运行情况",result.toString());
     }
 
     public static String getMemery() {

@@ -32,6 +32,9 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 
+/**
+ * @author june create by 2018/09/18
+ */
 @SpringBootApplication
 @EnableScheduling
 @MapperScan("springboot.dao")

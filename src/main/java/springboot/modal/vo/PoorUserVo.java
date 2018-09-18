@@ -3,7 +3,7 @@ package springboot.modal.vo;
 import java.io.Serializable;
 
 /**
- * Created by lxg
+ * Created by june
  * on 2017/2/20.
  */
 public class PoorUserVo implements Serializable {

@@ -9,7 +9,7 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/4/15 20:52
  */
 public class HttpJsonRequestDecoder extends AbstractHttpJsonDecoder<FullHttpRequest>{

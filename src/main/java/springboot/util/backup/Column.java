@@ -1,7 +1,7 @@
 package springboot.util.backup;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/23 20:51
  */
 public class Column {

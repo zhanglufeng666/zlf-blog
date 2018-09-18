@@ -5,7 +5,7 @@ import springboot.modal.vo.RelationshipVoKey;
 import java.util.List;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/24 21:28
  */
 public interface IRelationshipService {

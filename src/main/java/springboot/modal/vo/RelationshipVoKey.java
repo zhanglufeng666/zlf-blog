@@ -3,7 +3,7 @@ package springboot.modal.vo;
 import java.io.Serializable;
 
 /**
- * @author 
+ * @author june
  */
 public class RelationshipVoKey implements Serializable {
     /**

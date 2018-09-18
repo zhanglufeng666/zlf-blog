@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/21 21:31
  */
 public class DateKit {

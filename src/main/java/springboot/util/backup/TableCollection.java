@@ -3,7 +3,7 @@ package springboot.util.backup;
 import java.util.ArrayList;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/23 21:02
  */
 public class TableCollection extends ArrayList<Table>{

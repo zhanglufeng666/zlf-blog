@@ -28,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 贫困户管理
  *
- * @author tangj
+ * @author june
  * @date 2018/1/27 14:43
  */
 @Controller

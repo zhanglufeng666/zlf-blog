@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * map缓存
  *
- * @author tangj
+ * @author june
  * @date 2018/1/21 11:27
  */
 public class MapCache {

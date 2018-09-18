@@ -1,7 +1,7 @@
 package springboot.modal.redisKey;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/5/13 17:45
  */
 public class ContentKey {

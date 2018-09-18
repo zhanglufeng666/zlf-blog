@@ -6,7 +6,7 @@ import springboot.modal.vo.PoorUserVo;
 import springboot.modal.vo.PoorUserVoExample;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/24 21:04
  */
 public interface IPoorUserService {

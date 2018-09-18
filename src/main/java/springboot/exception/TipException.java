@@ -1,7 +1,7 @@
 package springboot.exception;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/21 14:05
  */
 public class TipException extends RuntimeException {

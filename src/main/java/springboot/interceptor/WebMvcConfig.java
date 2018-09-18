@@ -9,7 +9,7 @@ import springboot.util.MyUtils;
 import javax.annotation.Resource;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/22 20:50
  */
 @Component

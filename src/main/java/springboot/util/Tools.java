@@ -13,7 +13,7 @@ import java.nio.channels.FileChannel;
 import java.util.Random;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/21 20:40
  */
 public class Tools {

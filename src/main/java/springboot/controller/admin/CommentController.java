@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 评论模块
  *
- * @author tangj
+ * @author june
  * @date 2018/1/27 17:05
  */
 @Controller

@@ -11,7 +11,7 @@ import springboot.server.codec.HttpJsonRequestDecoder;
 import springboot.server.codec.HttpJsonResponseEncoder;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/4/15 15:27
  */
 public class HttpNettyServerInitializer extends ChannelInitializer<SocketChannel>{

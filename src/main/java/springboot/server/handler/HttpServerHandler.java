@@ -19,7 +19,7 @@ import springboot.server.codec.HttpJsonResponse;
 import javax.annotation.Resource;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/4/15 16:46
  */
 public class HttpServerHandler extends SimpleChannelInboundHandler<HttpJsonRequest>{

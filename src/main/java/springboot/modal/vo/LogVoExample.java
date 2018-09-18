@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author tangj
+ * @author june
  * @date 2018/1/21 21:16
  */
 public class LogVoExample {

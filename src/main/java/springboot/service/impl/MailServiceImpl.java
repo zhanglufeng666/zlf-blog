@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 import org.thymeleaf.TemplateEngine;
@@ -15,16 +16,17 @@ import javax.annotation.Resource;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.File;
+import java.util.List;
 
 /**
- * @author janti
+ * @author june
  * @date 2018/5/3 22:07
  */
 @Component
 public class MailServiceImpl implements IMailService {
 
-    @Autowired
-    private JavaMailSender mailSender;
+    @Resource
+    private JavaMailSenderImpl mailSender;
 
 
     @Resource
@@ -40,11 +42,11 @@ public class MailServiceImpl implements IMailService {
      * @param subject
      * @param content
      */
-    @Override
-    public void sendSimpleEmail(String to,String subject,String content) {
+//    @Override
+    public void sendSimpleEmail(List<String> to, String subject, String content) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(mailFrom);
-        message.setTo(to);
+        message.setTo(to.toArray(new String[to.size()]));
         message.setSubject(subject);
         message.setText(content);
         mailSender.send(message);
