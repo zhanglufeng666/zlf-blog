@@ -11,9 +11,9 @@
     <link rel="shortcut icon" th:href="@{/admin/images/favicon.png}"/>
 
     <script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>
-    <script th:src="@{/jantent/assets/js/amazeui.min.js}"></script>
-    <link rel="stylesheet" th:href="@{/jantent/assets/css/amazeui.min.css}"/>
-    <link rel="stylesheet" th:href="@{/jantent/assets/css/app.css}"/>
+    <script th:src="@{/june/assets/js/amazeui.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/june/assets/css/amazeui.min.css}"/>
+    <link rel="stylesheet" th:href="@{/june/assets/css/app.css}"/>
     <script th:src="@{/admin/js/base.js}"></script>
 </head>
 <body>
@@ -56,7 +56,7 @@
     var tale = new $.tale();
     function checkForm() {
         tale.post({
-            url: '/admin/login_index',
+            url: '/admin/login',
             data: $("#loginForm").serialize(),
             success: function (result) {
                 if (result && result.success) {
