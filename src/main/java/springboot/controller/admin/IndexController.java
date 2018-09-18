@@ -77,7 +77,7 @@ public class IndexController extends AbstractController {
 
     @GetMapping(value = "logout")
     public String logout() {
-        return "login_old";
+        return "admin/login";
     }
 
     @PostMapping(value = "/profile")
