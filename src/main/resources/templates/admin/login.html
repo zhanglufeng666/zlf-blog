@@ -10,7 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="shortcut icon" th:href="@{/admin/images/favicon.png}"/>
 
-    <script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>
+    <script th:src="@{/june/assets/js/jquery-2.0.3.min.js}"></script>
     <script th:src="@{/june/assets/js/amazeui.js}"></script>
     <link rel="stylesheet" th:href="@{/june/assets/css/amazeui.css}"/>
     <link rel="stylesheet" th:href="@{/june/assets/css/app.css}"/>
@@ -26,13 +26,13 @@
             <form class="am-form" id="loginForm">
 
                 <div class="am-input-group am-radius am-animation-slide-left">
-                    <input type="text" class="am-radius" name="username"/>
+                    <input type="text" class="am-radius" name="username" placeholder="请输入用户名"/>
                     <span class="am-input-group-label log-icon am-radius"><i
                             class="am-icon-user am-icon-sm am-icon-fw"></i></span>
                 </div>
                 <br>
                 <div class="am-input-group am-animation-slide-left log-animation-delay">
-                    <input  class="am-form-field am-radius log-input" placeholder="密码" name="password" type="password"/>
+                    <input  class="am-form-field am-radius log-input" placeholder="请输入密码" name="password" type="password"/>
                     <span class="am-input-group-label log-icon am-radius"><i
                             class="am-icon-lock am-icon-sm am-icon-fw"></i></span>
                 </div>

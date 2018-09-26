@@ -28,7 +28,7 @@ import java.io.IOException;
  * 登录控制
  *
  * @author june
- * @date 2018/1/21 14:07
+ *  2018/1/21 14:07
  */
 @Controller
 @RequestMapping("/admin")
@@ -73,7 +73,7 @@ public class AuthController extends AbstractController {
     }
 
     @RequestMapping("/logout")
-    public void logout(HttpSession session, HttpServletResponse response, HttpServletRequest request) {
+    public void logout(HttpSession session, HttpServletResponse response) {
         session.removeAttribute(WebConst.LOGIN_SESSION_KEY);
         Cookie cookie = new Cookie(WebConst.USER_IN_COOKIE, "");
         cookie.setMaxAge(0);
