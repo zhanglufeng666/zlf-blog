@@ -14,6 +14,26 @@ spring:
     mode: HTML5
     cache: false
 
+  redis:
+    database: 0
+    timeout: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+#    cluster:
+#      max-redirects: 10
+#      nodes: 127.0.0.1:6080
+
+  mail:
+    host: smtp.qq.com
+    port: 587 #465
+    username: 469022870@qq.com
+    password: kdgxlxjehfjzcaja
 
 mybatis:
   type-aliases-package: springboot.dao

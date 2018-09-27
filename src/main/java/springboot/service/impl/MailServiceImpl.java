@@ -2,6 +2,7 @@ package springboot.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -23,6 +24,7 @@ import java.util.List;
  * @date 2018/5/3 22:07
  */
 @Component
+//@Configuration
 public class MailServiceImpl implements IMailService {
 
     @Resource
@@ -32,7 +34,8 @@ public class MailServiceImpl implements IMailService {
     @Resource
     private TemplateEngine templateEngine;
 
-    @Value("${spring.mail.username}")
+//    @Value("${spring.mail.username}")
+    @Value("${spring.mail.username:#{null}}")
     private String mailFrom;
 
     /**
