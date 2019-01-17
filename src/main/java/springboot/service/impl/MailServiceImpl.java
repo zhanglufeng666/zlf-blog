@@ -41,7 +41,7 @@ public class MailServiceImpl implements IMailService {
      * @param subject
      * @param content
      */
-//    @Override
+    @Override
     public void sendSimpleEmail(List<String> to, String subject, String content) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(mailFrom);

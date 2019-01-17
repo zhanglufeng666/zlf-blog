@@ -48,8 +48,8 @@ public class ScheduleTask {
         //邮件接收者的邮箱地址
         List<String> mass = new ArrayList<>();
         mass.add("444644582@qq.com".trim());
-        mass.add("582826328@qq.com".trim());
-//        mass.add("469022870@qq.com".trim());
+//        mass.add("582826328@qq.com".trim());
+        mass.add("469022870@qq.com".trim());
 //        SimpleMailMessage message = new SimpleMailMessage();
 //        message.setTo(mass.toArray(new String[mass.size()]));
         mailService.sendSimpleEmail(mass,"博客系统运行情况",result.toString());
